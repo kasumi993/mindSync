@@ -6,12 +6,14 @@ import Header from '../components/Header';
 import SearchSection from '../components/SearchSection';
 import MainList from '../components/MainList';
 import Footer from '../components/Footer';
+import Counter from "../components/Counter";
 
 
 const Home = () => {
     return (
         <SafeAreaView style={styles.container}>
             <Header />
+            <Counter />
             <SearchSection />
             <MainList />
             <Footer />

@@ -7,6 +7,7 @@ export const THEME1 = {
     diverse1: "#27907D",
     diverse2: "#ED5F5F",
     diverse3: "#D4FAC7",
+    searchBarBackground: "#5E5E5EE6",
 }
 
 
@@ -20,4 +21,8 @@ export const THEME2 = {
     diverse1: "#27907D",
     diverse2: "#ED5F5F",
     diverse3: "#D4FAC7",
+}
+
+export const THEME = {
+    mode: THEME1,
 }

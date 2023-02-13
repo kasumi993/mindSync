@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native';
+import EmptyList from "./EmptyList";
 
 const MainList = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.username}>List of items...</Text>
+            <EmptyList/>
         </View>
     );
 }

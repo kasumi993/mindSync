@@ -1,33 +1,37 @@
 import { StyleSheet, Text, View } from 'react-native';
-import RoundPlus from '../assets/icons/roundPlus.svg';
+import EmptySvg from '../assets/icons/empty.svg';
 import { THEME } from '../assets/themes/theme'
 
-const Footer = () => {
+const MainList = () => {
     return (
         <View style={styles.container}>
             <View>
-                <View style={{alignItems: 'center', margin: 15}}>
-                    <RoundPlus/>
-                </View>
-                <View>
-                    <Text style={styles.footerText}>Vos idées sont précieuses, prenez en soin!</Text>
-                </View>
+                <Text style={styles.text}>A cours d'idées ?</Text>
+            </View>
+            <View>
+                <EmptySvg/>
+            </View>
+            <View>
+                <Text style={styles.text}>Vous n’avez aucun projet pour le moment</Text>
             </View>
         </View>
     );
 }
 
-export default Footer;
+export default MainList;
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        width: '100%',
         backgroundColor: '#000',
         alignItems: 'center',
         justifyContent: 'center',
     },
-    footerText: {
+    text: {
         color: THEME.mode.subText,
+        fontSize: 18,
+        margin: 25,
         fontFamily: 'signikaNegativeRegular',
     }
 });
