@@ -16,6 +16,8 @@ const App = () => {
         signikaNegativeRegular: require("./assets/fonts/SignikaNegative-Regular.ttf"),
         signikaNegativeSemiBold: require("./assets/fonts/SignikaNegative-SemiBold.ttf"),
         signikaNegativeMedium: require("./assets/fonts/SignikaNegative-Medium.ttf"),
+        ropaSans: require("./assets/fonts/RopaSans-Regular.ttf"),
+        ropaSansItalic: require("./assets/fonts/RopaSans-Italic.ttf"),
     })
 
     if(!loaded) return null;

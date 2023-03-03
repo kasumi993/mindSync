@@ -1,4 +1,5 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
+import {THEME} from "../assets/themes/theme";
 
 const Header = () => {
     return (
@@ -21,22 +22,21 @@ export default Header;
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: '#000',
+        flex: 0.5,
         alignItems: 'center',
         justifyContent: 'center',
     },
     textMain: {
         color: "#fff",
-        fontSize: 33,
-        fontFamily: 'signikaNegativeRegular',
+        fontSize: 30,
+        fontFamily: THEME.mode.primaryFont,
     },
     rightText: {
         textAlign: 'right',
     },
     subText: {
-        color: "#ffffffBA",
-        fontSize: 18,
-        fontFamily: 'signikaNegativeRegular',
+        color: THEME.mode.subText,
+        fontSize: 16,
+        fontFamily: THEME.mode.primaryFont,
     },
 });

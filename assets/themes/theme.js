@@ -1,7 +1,11 @@
 export const THEME1 = {
+    primaryFont: 'signikaNegativeRegular',
+    secondaryFont: 'ropaSans',
     background: "#000",
     primaryText: "#FFF",
+    titleText: "#FFFFFFE0",
     subText: "#FFFFFFBA",
+    descriptionSubText: "#FFFFFF7D",
     backOpacity: "#5E5E5EE6",
     modaleColor: "#112726",
     diverse1: "#27907D",

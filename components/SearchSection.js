@@ -17,7 +17,7 @@ export default SearchSection;
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 0.5,
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -33,6 +33,6 @@ const styles = StyleSheet.create({
     placeholder: {
         color: THEME.mode.subText,
         marginLeft: 16,
-        fontFamily: 'signikaNegativeRegular',
+        fontFamily: THEME.mode.primaryFont,
     }
 });

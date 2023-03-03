@@ -32,6 +32,6 @@ const styles = StyleSheet.create({
         color: THEME.mode.subText,
         fontSize: 18,
         margin: 25,
-        fontFamily: 'signikaNegativeRegular',
+        fontFamily: THEME.mode.primaryFont,
     }
 });
