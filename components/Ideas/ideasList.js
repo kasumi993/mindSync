@@ -1,13 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { THEME } from '../../assets/themes/theme';
 import IdeaListItem from './IdeaListItem';
 
 const IdeasList = (props) => {
     return (
         <View style={styles.container}>
-            <IdeaListItem/>
-            <IdeaListItem/>
-            <IdeaListItem/>
+            <FlatList data={props.list}
+                      renderItem={({item}) =>
+                          <IdeaListItem title={item.title} description={item.description}/>}
+                      keyExtractor={item => item.id}>
+            </FlatList>
         </View>
     );
 }
