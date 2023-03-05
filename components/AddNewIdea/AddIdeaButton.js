@@ -1,17 +1,18 @@
 import {useState} from 'react';
 import { StyleSheet, Text, View, Pressable } from 'react-native';
 import RoundPlus from '../../assets/icons/roundPlus.svg';
+import NewIdeaPopup from './NewIdeaPopup';
 import { THEME } from '../../assets/themes/theme'
 
-const Footer = (props) => {
+const AddIdeaButton = (props) => {
     const [newDialogVisible, setDialogVisibility] = useState(false);
+
+
     return (
         <View style={styles.container}>
             <View>
                 {newDialogVisible &&
-                    <Pressable onPress={() => {setDialogVisibility(false)}}>
-                        <Text style={styles.footerText}>bonjour</Text>
-                    </Pressable>}
+                    <NewIdeaPopup setDialogVisibility={setDialogVisibility} addIdeaHandler={props.addIdeaHandler}/> }
             </View>
             <View>
                 <Pressable onPress={() => {setDialogVisibility(true)}}>
@@ -24,15 +25,11 @@ const Footer = (props) => {
     );
 }
 
-export default Footer;
+export default AddIdeaButton;
 
 const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         justifyContent: 'center',
     },
-    footerText: {
-        color: THEME.mode.subText,
-        fontFamily: THEME.mode.primaryFont,
-    }
 });

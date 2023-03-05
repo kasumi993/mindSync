@@ -12,8 +12,8 @@ const IdeaListItem = (props) => {
                 <Text style={styles.title}>
                     {props.title}
                 </Text>
-                <Text ellipsizeMode='tail' numberOfLines={3} style={styles.description}>
-                    {props.description}
+                <Text ellipsizeMode='tail' numberOfLines={3} style={styles.summary}>
+                    {props.summary}
                 </Text>
             </View>
         </View>
@@ -29,11 +29,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
     },
-    description: {
+    summary: {
         fontFamily: THEME.mode.secondaryFont,
         fontSize: 14,
         lineHeight: 15,
-        color: THEME.mode.descriptionSubText,
+        color: THEME.mode.summarySubText,
     },
     title: {
         fontFamily: THEME.mode.primaryFont,

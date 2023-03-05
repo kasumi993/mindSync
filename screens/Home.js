@@ -1,6 +1,5 @@
-import {useState} from "react";
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, FlatList, SafeAreaView, Text, View } from 'react-native';
+import { StyleSheet, SafeAreaView, Platform} from 'react-native';
 
 import Header from '../components/Header';
 import SearchSection from '../components/SearchSection';
@@ -11,13 +10,16 @@ import Counter from "../components/Counter";
 
 const Home = () => {
     return (
-        <SafeAreaView style={styles.container}>
-            <Header />
-            <Counter />
-            <SearchSection />
-            <MainList />
-            <Footer />
-        </SafeAreaView>
+        <>
+            <StatusBar style="light"/>
+            <SafeAreaView style={styles.container}>
+                <Header />
+                <Counter />
+                <SearchSection />
+                <MainList />
+                <Footer style={{flex: 0.2}}/>
+            </SafeAreaView>
+        </>
     );
 }
 
@@ -27,5 +29,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#000',
+        paddingTop: Platform.OS === 'android' ? 35 : 0
     },
 });

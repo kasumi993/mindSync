@@ -1,4 +1,4 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import LogoSvg from '../assets/logo/logo.svg';
 import SettingSvg from '../assets/icons/🦆 settings.svg';
 import AvatarSvg from '../assets/avatar.svg';
@@ -33,7 +33,6 @@ export default Header;
 
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 20,
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',

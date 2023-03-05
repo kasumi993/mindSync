@@ -1,7 +1,7 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
 import {THEME} from "../assets/themes/theme";
 
-const Header = () => {
+const Counter = () => {
     return (
         <View style={styles.container}>
             <View style={{width: '90%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
@@ -18,7 +18,7 @@ const Header = () => {
     );
 }
 
-export default Header;
+export default Counter;
 
 const styles = StyleSheet.create({
     container: {

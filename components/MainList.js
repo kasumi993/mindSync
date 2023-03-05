@@ -9,35 +9,9 @@ const MainList = (props) => {
         {
             id: 1,
             title: 'voila',
-            description: 'descrription',
+            summary: 'descrription',
         },
-        {
-            id: 2,
-            title: 'second',
-            description: 'Cette application vise à permettre aux particuliers de créer facilement une boutique en ligne, de gérer leurs produits  et leurs commandes',
-        },
-        {
-            id: 3,
-            title: 'third',
-            description: 'Cette application vise à permettre aux particuliers de créer facilement une boutique en ligne, de gérer leurs produits  et leurs commandes',
-        },
-        {
-            id: 4,
-            title: 'fourth',
-            description: 'Cette application vise à permettre aux particuliers de créer facilement une boutique en ligne, de gérer leurs produits  et leurs commandes',
-        },
-        {
-            id: 5,
-            title: 'fifth',
-            description: 'Cette application vise à permettre aux particuliers de créer facilement une boutique en ligne, de gérer leurs produits  et leurs commandes',
-        },
-        {
-            id: 6,
-            title: 'sixth',
-            description: 'Cette application vise à permettre aux particuliers de créer facilement une boutique en ligne, de gérer leurs produits  et leurs commandes',
-        }
     ])
-console.log(ideasList);
     function addIdeaHandler(idea){
         setIdeasList((currentList) => [...currentList, idea])
     }
@@ -54,7 +28,7 @@ console.log(ideasList);
                 </View>
             }
             <View style={{flex: 0.3}}>
-                <AddIdeaButton/>
+                <AddIdeaButton addIdeaHandler={addIdeaHandler}/>
             </View>
         </View>
     );

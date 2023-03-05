@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import EmptySvg from '../assets/icons/empty.svg';
 import { THEME } from '../assets/themes/theme'
 
-const MainList = () => {
+const EmptyList = () => {
     return (
         <View style={styles.container}>
             <View>
@@ -18,7 +18,7 @@ const MainList = () => {
     );
 }
 
-export default MainList;
+export default EmptyList;
 
 const styles = StyleSheet.create({
     container: {

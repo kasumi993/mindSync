@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Pressable } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { THEME } from '../assets/themes/theme'
 
 const Footer = () => {
@@ -13,7 +13,6 @@ export default Footer;
 
 const styles = StyleSheet.create({
     container: {
-        flex: 0.2,
         alignItems: 'center',
         justifyContent: 'center',
     },

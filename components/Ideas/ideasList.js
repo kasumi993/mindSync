@@ -7,7 +7,7 @@ const IdeasList = (props) => {
         <View style={styles.container}>
             <FlatList data={props.list}
                       renderItem={({item}) =>
-                          <IdeaListItem title={item.title} description={item.description}/>}
+                          <IdeaListItem title={item.title} summary={item.summary}/>}
                       keyExtractor={item => item.id}>
             </FlatList>
         </View>
