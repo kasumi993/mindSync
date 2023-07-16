@@ -8,8 +8,9 @@ const MainList = (props) => {
     const [ideasList, setIdeasList] = useState([
         {
             id: 1,
-            title: 'voila',
-            summary: 'descrription',
+            title: 'Appli e-commerce',
+            summary: 'Cette application vise à permettre aux particuliers de créer facilement une boutique en ligne, de gérer leurs produits  et leurs commandes',
+            createdSince: '20j',
         },
     ])
     function addIdeaHandler(idea){
@@ -23,8 +24,8 @@ const MainList = (props) => {
                     <EmptyList/>
                 </View>
                 :
-                <View style={{flex: 1.7}}>
-                    <IdeasList list={ideasList}/>
+                <View style={{flex: 1.7, width: '90%'}}>
+                    <IdeasList addIdeaHandler={addIdeaHandler} list={ideasList}/>
                 </View>
             }
             <View style={{flex: 0.3}}>

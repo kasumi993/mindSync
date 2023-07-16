@@ -1,16 +1,16 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import {THEME} from "../assets/themes/theme";
 
-const Counter = () => {
+const Counter = (props) => {
     return (
         <View style={styles.container}>
             <View style={{width: '90%', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
                 <View>
-                    <Text style={styles.textMain}>05</Text>
+                    <Text style={styles.textMain}>{props.counterCreated ? props.counterCreated : '00'}</Text>
                     <Text style={styles.subText}>Idées Créées</Text>
                 </View>
                 <View>
-                    <Text style={[styles.textMain, styles.rightText]}>01</Text>
+                    <Text style={[styles.textMain, styles.rightText]}>{props.counterStarted ? props.counterStarted : '00'}</Text>
                     <Text style={styles.subText}>Projets Commencés</Text>
                 </View>
             </View>

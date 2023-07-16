@@ -41,7 +41,7 @@ const IdeaMainInfo = (props) => {
 
             <FormInput editable
                        placeholder={'De quoi s’agit-il?'}
-                       style={{marginBottom: 20}} 
+                       style={{marginBottom: 20}}
                        multiline
                        numberOfLines={3}
                        maxLength={50}

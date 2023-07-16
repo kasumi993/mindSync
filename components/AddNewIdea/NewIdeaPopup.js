@@ -1,9 +1,7 @@
 import {Text, View, Pressable, Modal, StyleSheet, ScrollView} from "react-native";
-import RoundPlus from "../../assets/icons/roundPlus.svg";
 import {THEME} from "../../assets/themes/theme";
 import Footer from "../Footer";
 import LogoSvg from "../../assets/logo/logo.svg";
-import FormInput from "../Custom/FormInput";
 import IdeaMainInfo from "../FormInputs/ideaMainInfo";
 import {useState} from "react";
 
@@ -15,6 +13,7 @@ const NewIdeaPopup = (props) => {
                 id: Math.floor(Math.random() * 100) + 1,
                 title: idea.title,
                 summary: idea.summary,
+                createdSince: '1s',
             });
         }
         props.setDialogVisibility(false);

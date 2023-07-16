@@ -5,7 +5,7 @@ import FormInput from "../Custom/FormInput";
 const IdeaSpecs = (props) => {
     return (
         <View style={styles.container}>
-            <FormInput placeholder={'Nom du projet'}/>
+            <FormInput placeholder={'Spécifications'}/>
         </View>
     )
 }
